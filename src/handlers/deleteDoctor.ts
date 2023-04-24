@@ -7,7 +7,7 @@ export const deleteDoctorHandler: myHandlerWithParam<
   api.DeleteDoctorReq,
   api.DeleteDoctorRes
 > = async (req, res) => {
-  const doctor_id = req.params.id;
+  const doctor_id = res.locals.id;
 
   await DB.deleteDoctor(doctor_id)
     .then((result) => {

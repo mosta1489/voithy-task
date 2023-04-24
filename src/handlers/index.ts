@@ -5,3 +5,4 @@ export * from "./getPatientsHandler";
 export * from "./updatePatient";
 export * from "./deletePatientHandler";
 export * from "./AddNewPatient";
+export * from "./deleteDoctor";

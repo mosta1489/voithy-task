@@ -9,6 +9,8 @@ export interface DoctorDao {
 
   updateDoctorVerification(id: string): Promise<void>;
 
+  deleteDoctor(id: string): Promise<void>;
+
   createPatient(patient: type.Patient): Promise<void>;
 
   getAllPatient(doctor_id: string): Promise<type.Patient[] | undefined>;

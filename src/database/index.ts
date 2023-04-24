@@ -54,6 +54,15 @@ class DoctorDaoImpl implements DoctorDao {
       return Promise.reject(error);
     }
   }
+  async deleteDoctor(id: string): Promise<void> {
+    try {
+      await conn.query(myQuery.deleteDoctor, [id]);
+      return Promise.resolve();
+    } catch (error) {
+      console.log(error);
+      return Promise.reject(error);
+    }
+  }
 
   async createPatient(patient: type.Patient): Promise<void> {
     try {

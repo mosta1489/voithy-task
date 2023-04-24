@@ -35,6 +35,7 @@ exports.doctorRouter = (0, express_1.Router)();
 exports.doctorRouter.post("/signup", (0, express_async_handler_1.default)(handler.signUpHandler));
 exports.doctorRouter.get("/verify", (0, express_async_handler_1.default)(handler.verifyHandler));
 exports.doctorRouter.post("/login", (0, express_async_handler_1.default)(handler.loginHandler));
+exports.doctorRouter.delete("/doctor/:id", middleware.jwtParseMiddleware, (0, express_async_handler_1.default)(handler.deletePatientHandler));
 exports.doctorRouter.use("/patient", middleware.jwtParseMiddleware, middleware.checkVerification);
 exports.doctorRouter.post("/patient", (0, express_async_handler_1.default)(handler.addNewPatientHandler));
 exports.doctorRouter.get("/patient", (0, express_async_handler_1.default)(handler.getAllPatientsHandler));

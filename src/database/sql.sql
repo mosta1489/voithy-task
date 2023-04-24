@@ -14,5 +14,5 @@ CREATE TABLE patient (
   gender VARCHAR(100) NOT NULL,
   potion VARCHAR(100),
   doctor_id VARCHAR(100) NOT NULL,
-  FOREIGN KEY (doctor_id) REFERENCES doctor(id)
+  FOREIGN KEY (doctor_id) REFERENCES doctor(id) ON DELETE CASCADE,
 );

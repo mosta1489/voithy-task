@@ -27,6 +27,14 @@ export interface resendVerificationParam {
 export interface resendVerificationReq {}
 export interface resendVerificationRes {}
 
+// ----------------- Delete Doctor ------------------------------
+
+export interface DeleteDoctorParam {
+  id: string;
+}
+export interface DeleteDoctorReq {}
+export interface DeleteDoctorRes {}
+
 // ------------------ Add New Patient ------------------------------
 export interface AddNewPatientReq {
   name: string;

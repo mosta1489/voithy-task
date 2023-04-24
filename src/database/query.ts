@@ -13,6 +13,8 @@ class MyQuery {
 
   updateDoctorVerification = `UPDATE doctor SET verified = true WHERE id = $1;`;
 
+  deleteDoctor = `DELETE FROM doctor WHERE id = $1;`;
+
   createPatient = `INSERT INTO patient (id, name, age, gender, potion, doctor_id)
           VALUES ($1, $2, $3, $4, $5, $6);`;
 

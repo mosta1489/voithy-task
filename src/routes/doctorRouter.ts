@@ -12,6 +12,12 @@ doctorRouter.get("/verify", asyncHandler(handler.verifyHandler));
 
 doctorRouter.post("/login", asyncHandler(handler.loginHandler));
 
+doctorRouter.delete(
+  "/doctor/:id",
+  middleware.jwtParseMiddleware,
+  asyncHandler(handler.deletePatientHandler)
+);
+
 doctorRouter.use(
   "/patient",
   middleware.jwtParseMiddleware,

@@ -6,6 +6,7 @@ class MyQuery {
         this.getDoctorById = `SELECT * FROM doctor WHERE id = $1;`;
         this.getDoctorByEmail = `SELECT * FROM doctor WHERE email = $1;`;
         this.updateDoctorVerification = `UPDATE doctor SET verified = true WHERE id = $1;`;
+        this.deleteDoctor = `DELETE FROM doctor WHERE id = $1;`;
         this.createPatient = `INSERT INTO patient (id, name, age, gender, potion, doctor_id)
           VALUES ($1, $2, $3, $4, $5, $6);`;
         this.getAllPatient = `SELECT * FROM patient WHERE doctor_id = $1;`;

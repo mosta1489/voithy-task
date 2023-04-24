@@ -73,6 +73,18 @@ class DoctorDaoImpl {
             }
         });
     }
+    deleteDoctor(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                yield connection_1.default.query(query_1.default.deleteDoctor, [id]);
+                return Promise.resolve();
+            }
+            catch (error) {
+                console.log(error);
+                return Promise.reject(error);
+            }
+        });
+    }
     createPatient(patient) {
         return __awaiter(this, void 0, void 0, function* () {
             try {

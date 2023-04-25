@@ -31,5 +31,5 @@ export const addNewPatientHandler: type.myHandler<
     return res.status(500).send({ error: "Something went wrong" });
   });
 
-  return res.sendStatus(200);
+  return res.status(200).json({patient});
 };

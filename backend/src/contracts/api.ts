@@ -42,7 +42,9 @@ export interface AddNewPatientReq {
   gender: string;
   potion: string;
 }
-export interface AddNewPatientRes {}
+export interface AddNewPatientRes {
+  patient: type.Patient;
+}
 
 //  ------------------ Get All Patient Data ------------------------------
 export interface GetAllPatientDataParam {}

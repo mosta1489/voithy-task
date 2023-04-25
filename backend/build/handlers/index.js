@@ -21,4 +21,5 @@ __exportStar(require("./getPatientsHandler"), exports);
 __exportStar(require("./updatePatient"), exports);
 __exportStar(require("./deletePatientHandler"), exports);
 __exportStar(require("./AddNewPatient"), exports);
+__exportStar(require("./deleteDoctor"), exports);
 //# sourceMappingURL=index.js.map

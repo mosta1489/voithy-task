@@ -35,7 +35,7 @@ const addNewPatientHandler = (req, res) => __awaiter(void 0, void 0, void 0, fun
     yield database_1.DB.createPatient(patient).catch((error) => {
         return res.status(500).send({ error: "Something went wrong" });
     });
-    return res.sendStatus(200);
+    return res.status(200).json({ patient });
 });
 exports.addNewPatientHandler = addNewPatientHandler;
 //# sourceMappingURL=AddNewPatient.js.map

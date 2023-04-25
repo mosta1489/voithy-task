@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.deleteDoctorHandler = void 0;
 const database_1 = require("../database");
 const deleteDoctorHandler = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const doctor_id = req.params.id;
+    const doctor_id = res.locals.id;
     yield database_1.DB.deleteDoctor(doctor_id)
         .then((result) => {
         res.sendStatus(200);

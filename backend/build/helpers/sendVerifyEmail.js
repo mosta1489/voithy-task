@@ -9,7 +9,7 @@ const nodemailer_1 = __importDefault(require("nodemailer"));
 const sendEmail = (email, token, name) => {
     const authEmail = (0, accessEnv_1.accessEnv)("VERIFY_EMAIL");
     const authPassword = (0, accessEnv_1.accessEnv)("VERIFY_PASSWORD");
-    const verificationLink = `http://localhost:3000/api/v1/verify/?key=${token}`;
+    const verificationLink = `http://172.190.14.21/api/v1/verify/?key=${token}`;
     const transporter = nodemailer_1.default.createTransport({
         host: "smtp.gmail.com",
         port: 587,

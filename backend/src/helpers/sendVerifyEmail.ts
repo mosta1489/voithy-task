@@ -4,7 +4,7 @@ import nodemailer from "nodemailer";
 export const sendEmail = (email: string, token: string, name: string): void => {
   const authEmail = accessEnv("VERIFY_EMAIL");
   const authPassword = accessEnv("VERIFY_PASSWORD");
-  const verificationLink = `http://localhost:3000/api/v1/verify/?key=${token}`;
+  const verificationLink = `http://172.190.14.21/api/v1/verify/?key=${token}`;
 
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",

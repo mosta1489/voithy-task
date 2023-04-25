@@ -72,8 +72,8 @@ The main features of this project include:
 
 # Deployment
 
-- The app is deployed on Azure. You can visit it at [https://dose-manager.azurewebsites.net/](https://dose-manager.azurewebsites.net/)
+- The app is deployed on Azure. You can visit it at [http://172.190.14.21/api/v1/](http://172.190.14.21/test)
 
 # API Documentation
 
-- You can visit the API documentation at [https://dose-manager.azurewebsites.net/api-docs/](https://dose-manager.azurewebsites.net/api-docs/)
+- You can visit the API documentation at [https://documenter.getpostman.com/view/18849836/2s93Y5RLtU](https://documenter.getpostman.com/view/18849836/2s93Y5RLtU)

@@ -15,15 +15,10 @@ The main features of this project include:
 # Technologies
 
 - Node.js/Express with TypeScript
-- PostgreSQL for the database
-- Docker Container
-- jsonwebtoken from npm for working with JWTs
-- dotenv from npm for managing environment variables
-- bcrypt to hash passwords to secure them
-- dotenv from npm for managing environment variables
-- nginx as a web server
-- React.js for the frontend
-- Axios for communicating with the backend
+- PostgreSQL
+- Docker
+- nginx
+- React.js
 
 ## Schema:
 
